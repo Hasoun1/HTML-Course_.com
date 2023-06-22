@@ -1,0 +1,159 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Lessons Just for You!</title>
+    <link rel="stylesheet" href="style_about.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="menu">
+        <div>
+          <label class="logo" onclick="document.location='index.html'">HTML Course</label>
+        </div>
+          <ul>
+            <li><a href="Overview.html">Overview</a></li>
+            <li><a href="Lessons.html">Lessons</a></li>
+            <li><a href="Resources.html">Resources</a></li>
+            <li><a href="About.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div>
+        <section>
+          <div class="First">
+              <h1>About Us!</h1>
+          </div>
+        </section>
+        <section>
+          <div class="container reveal">
+            <h2>Meet The Researchers:</h2>
+            <div class="cards">
+              <div class="text-card">
+                <h3>Group Leader:</h3>
+                <img class="Jason" src="Profile/Jason.jpg" alt="">
+                <h5>Jason Racca</h5>
+                <p>"Mistakes always lead us to greatness."</p>
+              </div>
+              <div class="text-card">
+                <h3>Group Member:</h3>
+                <img class="Jason" src="Profile/angelica.png" alt="">
+                <h5>Angelica Malabiga</h5>
+                <p>"Never stop Learning."</p>
+              </div>
+              <div class="text-card">
+                <h3>Group Member:</h3>
+                <img class="Jason" src="Profile/Orendain.png" alt="">
+                <h5>Christian Orendain</h5>
+                <p>"Don't stop when you're tired, stop when you're done."</p>
+              </div>
+              <div class="text-card">
+                <h3>Group Member:</h3>
+                <img class="Jason" src="Profile/Janella.jpg" alt="">
+                <h5>Janella Brilla</h5>
+                <p>"Live your life as if it is your last."</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container reveal">
+            <h2>Contact Us:</h2>
+            <div class="cards">
+              <div class="text-card_1">
+                <h3>Jason's Contacts:</h3>
+                <p>Facebook Account:</p>
+                <p on-clionclick="document.location='https://www.facebook.com/jason.racca.520dseeeeeerrrrere'" style="cursor: pointer; transition: all 0.3s ease;">https://www.facebook.com/
+                  <br>jason.racca.520dseeeeeerrrrere
+                </p>
+                &nbsp;
+                <p>Gmail Account:
+                  <br>jason19racca@gmail.com</p>
+                &nbsp;
+                <p>Contact Number:
+                  <br>09356191173</p>
+              </div>
+              <div class="text-card_1">
+                <h3>Angelica's Contacts:</h3>
+                <p>Facebook Account:</p>
+                <p on-clionclick="document.location='https://www.facebook.com/Lyksmalabiga'" style="cursor: pointer; transition: all 0.3s ease;">https://www.facebook.com/
+                  <br>Lyksmalabiga
+                </p>
+                &nbsp;
+                <p>Gmail Account:
+                  <br>angelica.malabiga@gmail.com</p>
+                &nbsp;
+                <p>Contact Number:
+                  <br>09761332980</p>
+              </div>
+              <div class="text-card_1">
+                <h3>Christian's Contacts:</h3>
+                <p>Facebook Account:</p>
+                <p on-clionclick="document.location='https://www.facebook.com/profile.php?id=100006101025692&mibextid=ZbWKwL'" style="cursor: pointer; transition: all 0.3s ease;">https://www.facebook.com/
+                  <br>profile.php?id=100006101025692
+                </p>
+                &nbsp;
+                <p>Gmail Account:
+                  <br>Christianlesterorendain29@gmail.com</p>
+                &nbsp;
+                <p>Contact Number:
+                  <br>09109421922</p>
+              </div>
+              <div class="text-card_1">
+                <h3>Christian's Contacts:</h3>
+                <p>Facebook Account:</p>
+                <p on-clionclick="document.location='https://www.facebook.com/Janella.Brilla'" style="cursor: pointer; transition: all 0.3s ease;">https://www.facebook.com/
+                  <br>Janella.Brilla
+                </p>
+                &nbsp;
+                <p>Gmail Account:
+                  <br>janellabrilla8@gmail.com</p>
+                &nbsp;
+                <p>Contact Number:
+                  <br>09977259414</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <h3 class="School">Sto. Niño National High School</h3>
+            <p class="add_info">Address: Agricultores St, Marikina, 1800 Metro Manila</p>
+            <p class="add_info">Contact Number: (02)8952-3791</p>
+            <p class="add_info">Gmail Account: snnhs.marikina@deped.gov.ph</p>
+          </div>
+          <img class="Deped" src="Logos/Deped_Logo.png" alt="">
+          <img class="Sto" src="Logos/Sto_Logo.png" alt="">
+        </section>
+      </div>
+    <script type="text/javascript">
+      window.addEventListener('scroll', reveal);
+  
+      function reveal() {
+        var reveals = document.querySelectorAll('.reveal');
+  
+        for(var i = 0; i < reveals.length; i++) {
+  
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+          }
+          else {
+            reveals[i].classList.remove('active');
+          }
+        }
+      }
+      </script>
+  </body>
+</html>

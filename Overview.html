@@ -1,0 +1,104 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HTML Lessons Just for You!</title>
+    <link rel="stylesheet" href="style_overview.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="menu">
+        <div>
+          <label class="logo" onclick="document.location='index.html'">HTML Course</label>
+        </div>
+          <ul>
+            <li><a href="Overview.html">Overview</a></li>
+            <li><a href="Lessons.html">Lessons</a></li>
+            <li><a href="Resources.html">Resources</a></li>
+            <li><a href="About.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <div>
+        <section>
+          <div class="First">
+            <div class="Row">
+              <h1>Overview of</h1>
+              <h1>the HTML</h1>
+            </div>
+            <div class="Image">
+              <img class="Overview" src="Images/Overview.png" alt="">
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container reveal">
+            <h2>About Our Website</h2>
+            <div class="cards_1">
+              <div class="text-card_1">
+                <h3>What is HTML?</h3>
+                <p>1. It a popular computer language that is used to create web page. It is a coding system used to create a web pages.</p>
+                <p>2. It consists of markup that conveys information about the structure.</p>
+                <p>3. It provides instructions to the Web browser on how documents.</p>
+                <p>4. In 1990, Tim Berners-Lee first developed HTML. The web's father is also known. </p>
+                <p>5. In 1996, it was authorized to maintain HTML specifications in the World Wide Web Consortium (W3C).</p>
+              </div>
+              <div class="text-card_2">
+                <h3>What is the purpose of this interactive website?</h3>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe purpose of this interactive website is to provide additional support for the knowledge of 
+                  Grade 11 ICT students in Sto. Niño National High School. In addition, to give them an interactive engagement in a unique and creative way of learning about HTML, we created this website on behalf of the teachers who teach HTMl in the ICT strand in grade 11.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container reveal">
+            <h2>Objectives of
+              <br>the Website:</h2>
+            <div class="cards">
+              <div class="text-card">
+                <h3>Learners should learn different styles using HTML</h3>
+              </div>
+              <div class="text-card">
+                <h3>Learners should learn using tables, breaks, and spaces in HTML</h3>
+              </div>
+              <div class="center">
+                <div class="btns">
+                  <button onclick="document.location='Lessons.html'">Lets Dive In!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <script type="text/javascript">
+      window.addEventListener('scroll', reveal);
+
+      function reveal() {
+        var reveals = document.querySelectorAll('.reveal');
+
+        for(var i = 0; i < reveals.length; i++) {
+
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+          }
+          else {
+            reveals[i].classList.remove('active');
+          }
+        }
+      }
+      </script>
+  </body>
+</html>

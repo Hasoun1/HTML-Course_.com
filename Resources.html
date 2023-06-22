@@ -1,0 +1,95 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Lessons Just for You!</title>
+    <link rel="stylesheet" href="style_resources.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="menu">
+        <div>
+          <label class="logo" onclick="document.location='index.html'">HTML Course</label>
+        </div>
+          <ul>
+            <li><a href="Overview.html">Overview</a></li>
+            <li><a href="Lessons.html">Lessons</a></li>
+            <li><a href="Resources.html">Resources</a></li>
+            <li><a href="About.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div>
+        <section>
+          <div class="First">
+              <h1>Resources That Can Help 
+                <br> Know More About HTML
+              </h1>
+              <h1 class="mobile">Resources That<br>Can Help<br>Know More About<br>HTML</h1>
+          </div>
+        </section>
+        <section>
+          <div class="container reveal">
+            <h2>Resources Came From Youtube</h2>
+            <div class="cards">
+              <div class="text-card">
+                <iframe style="position: relative; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" width="560" height="315" src="https://www.youtube.com/embed/29l2qxSJSIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="text-card">
+                <iframe style="position: relative; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" width="560" height="315" width="560" height="315" src="https://www.youtube.com/embed/i3GE-toQg-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="text-card">
+                <iframe style="position: relative; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" width="560" height="315" width="560" height="315" width="560" height="315" src="https://www.youtube.com/embed/U4UHoiK6Oo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container reveal">
+            <h2>Resources that used for the lessons</h2>
+            <div class="cards">
+              <div class="text-card_1">
+                <h3 onclick="document.location='TLE_Computer-3rd-Qtr-Web-Dev-Module2-SNNHS.pdf'">3rd Quarter: Module 2: Web Development</h3>
+              </div>
+              <div class="text-card_1">
+                <h3 onclick="document.location='TLE_Computer-3rd-Qtr-Web-Dev-Module3-SNNHS.pdf'">3rd Quarter: Module 3: Web Development</h3>
+              </div>
+              <div class="center">
+                <div class="btns">
+                  <button onclick="document.location='About.html'">About Us!</button>
+                </div>
+              </div>
+            </div>
+        </section>
+      </div>
+    <script type="text/javascript">
+      window.addEventListener('scroll', reveal);
+  
+      function reveal() {
+        var reveals = document.querySelectorAll('.reveal');
+  
+        for(var i = 0; i < reveals.length; i++) {
+  
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+          }
+          else {
+            reveals[i].classList.remove('active');
+          }
+        }
+      }
+      </script>
+  </body>
+</html>
